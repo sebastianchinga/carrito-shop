@@ -2,6 +2,19 @@ const listaProductos = document.querySelector('.productos-grid');
 const cuerpoCarrito = document.querySelector('.carrito-lista');
 const vaciarCarrito = document.querySelector('.btn-vaciar');
 
+window.addEventListener('scroll', () => {
+
+    const main = document.querySelector('main');
+    const header = document.querySelector('header');
+    const coordenada = main.getBoundingClientRect();
+
+    if (coordenada.top < -41) {
+        header.classList.add('fijo');
+    } else {
+        header.classList.remove('fijo');
+    }
+})
+
 let carrito = [];
 let total;
 

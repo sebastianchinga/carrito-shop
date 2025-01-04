@@ -6,6 +6,11 @@ body {
     color: #333;
 }
 
+.fijo {
+    position: fixed;
+    width: 97.8%;
+}
+
 header {
     background-color: #343a40;
     color: white;
@@ -200,14 +205,14 @@ h1 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
-.producto:hover {
+/* .producto:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
+} */
 
 .producto-imagen {
     width: 100%;
