@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras en Header</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="carrito-container">
+            <div class="carrito-icono">🛒 <span class="carrito-cantidad"></span></div>
+            <div class="carrito-dropdown">
+                <h3>Tu Carrito</h3>
+                <ul class="carrito-lista">
+                    <!-- <li class="carrito-item">
+                        <img src="https://via.placeholder.com/50" alt="Producto 1" class="item-imagen">
+                        <div class="item-detalles">
+                            <span class="item-nombre">Producto 1</span>
+                            <span class="item-precio">$19.99</span>
+                            <div class="item-cantidad">
+                                Cantidad: <span class="cantidad-valor">1</span>
+                            </div>
+                        </div>
+                        <button class="btn-eliminar">×</button>
+                    </li> -->
+                    
+                </ul>
+                <div class="carrito-total">
+                    <span>Total:</span>
+                    <span class="total-precio">0</span>
+                </div>
+                <button class="btn-vaciar">Vaciar Carrito</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Nuestros Productos</h1>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="images/1.jpg" alt="Producto 1" class="producto-imagen">
+                <div class="producto-info">
+                    <h3>Producto 1</h3>
+                    <p class="producto-descripcion">Una breve descripción del Producto 1 y sus características.</p>
+                    <p class="producto-precio">$<span>19.99</span></p>
+                    <button data-id="1" class="btn-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="images/2.jpg" alt="Producto 2" class="producto-imagen">
+                <div class="producto-info">
+                    <h3>Producto 2</h3>
+                    <p class="producto-descripcion">Una breve descripción del Producto 2 y sus características.</p>
+                    <p class="producto-precio">$<span>24.99</span></p>
+                    <button data-id="2" class="btn-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="images/3.jpg" alt="Producto 3" class="producto-imagen">
+                <div class="producto-info">
+                    <h3>Producto 3</h3>
+                    <p class="producto-descripcion">Una breve descripción del Producto 3 y sus características.</p>
+                    <p class="producto-precio">$<span>14.99</span></p>
+                    <button data-id="3" class="btn-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="images/4.jpg" alt="Producto 4" class="producto-imagen">
+                <div class="producto-info">
+                    <h3>Producto 4</h3>
+                    <p class="producto-descripcion">Una breve descripción del Producto 4 y sus características.</p>
+                    <p class="producto-precio">$<span>29.99</span></p>
+                    <button data-id="4" class="btn-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
